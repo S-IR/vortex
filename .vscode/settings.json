@@ -1,0 +1,16 @@
+{
+  "files.associations": {
+    "stdio.h": "c",
+    "math.h": "c",
+    "raylib.h": "c",
+    "stdlib.h": "c",
+    "app.h": "c",
+    "div.h": "c",
+    "time.h": "c",
+    "stddef.h": "c",
+    "p.h": "c",
+    "on.h": "c",
+    "components.h": "c",
+    "assert.h": "c"
+  }
+}
