@@ -30,7 +30,7 @@ int main()
     Div newDiv = {
         .width = (rand() % 200) + 50,  // Width between 50 and 250
         .height = (rand() % 100) + 25, // Height between 25 and 125
-        .body = "hello!",
+        .body = NULL,
         .color = {
             .r = rand() % 256, // Red component between 0 and 255
             .g = rand() % 256, // Green component between 0 and 255

@@ -4,24 +4,6 @@
 #include <stddef.h>
 #include "components.h"
 
-typedef enum
-{
-  TYPE_DIV,
-  TYPE_P,
-} COMPONENT_TYPE;
-
-typedef union
-{
-  Div div;
-  P p;
-} ComponentBody;
-
-typedef struct
-{
-  COMPONENT_TYPE type;
-  ComponentBody body;
-} Component;
-
 #define MAX_COMPONENTS 1024
 
 #define App_add(app, x) _Generic((x), \

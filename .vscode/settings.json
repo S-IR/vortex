@@ -11,6 +11,11 @@
     "p.h": "c",
     "on.h": "c",
     "components.h": "c",
-    "assert.h": "c"
-  }
+    "assert.h": "c",
+    "stdbool.h": "c",
+    "debug.h": "c"
+  },
+  "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+    "clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling"
+  ]
 }
