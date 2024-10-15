@@ -4,15 +4,40 @@ import (
 	"image/color"
 )
 
-const (
-	Arial         = "arial.ttf"
-	TimesNewRoman = "times-new-roman.ttf"
-)
+type Node[T any] struct {
+	data T
+	next *Node[T]
+}
+
+type Defaults_T struct {
+	Color color.RGBA
+	Text  int
+	Font  string
+	M     int
+	P     int
+}
+
+// const (
+// 	ArialWindows         = "arial.ttf"
+// 	ArialLinux           = "LiberationSans-Regular.ttf" // Free alternative for Arial
+// 	ArialMac             = "Arial"
+// 	TimesNewRomanWindows = "times.ttf"
+// 	TimesNewRomanLinux   = "LiberationSerif-Regular.ttf" // Free alternative for Times New Roman
+// 	TimesNewRomanMac     = "Times New Roman"
+// )
 
 var (
-	Serif     = TimesNewRoman
-	SansSerif = Arial
+	Serif     = Arial
+	SansSerif = TimesNewRoman
 )
+
+var Defaults = Defaults_T{
+	Color: Black,
+	Text:  TextBase,
+	Font:  SansSerif,
+	M:     4,
+	P:     4,
+}
 
 var (
 	White = color.RGBA{0xff, 0xff, 0xff, 0xFF}

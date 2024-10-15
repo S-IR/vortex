@@ -4,6 +4,7 @@ go 1.23.2
 
 require (
 	github.com/flopp/go-findfont v0.1.0
+	github.com/gen2brain/raylib-go/raylib v0.0.0-20241014163942-bf5ef1835077
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
 	golang.org/x/exp/shiny v0.0.0-20241009180824-f66d83c29e7c
 	golang.org/x/image v0.21.0
@@ -11,8 +12,7 @@ require (
 )
 
 require (
-	dmitri.shuralyov.com/gpu/mtl v0.0.0-20221208032759-85de2813cf6b // indirect
-	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20231223183121-56fa3ac82ce7 // indirect
-	github.com/jezek/xgb v1.1.1 // indirect
+	github.com/ebitengine/purego v0.8.0 // indirect
+	golang.org/x/exp v0.0.0-20241009180824-f66d83c29e7c // indirect
 	golang.org/x/sys v0.26.0 // indirect
 )
